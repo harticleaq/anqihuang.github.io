@@ -1,0 +1,184 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+  <script src="https://use.fontawesome.com/baff6f55f5.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Anqi Huang</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-29643011-3', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <!-- New GA4 tracking code, see https://support.google.com/analytics/answer/10271001#analyticsjs-enable-basic --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GNJD50R0Z7"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GNJD50R0Z7');
+    </script>
+
+    <!-- For all browsers -->
+    <link rel="stylesheet" href="assets/css/academicons.min.css"/>
+    <link rel="stylesheet" href="assets/css/academicons.css"/>
+    
+    <style>
+      button.accordion {
+      font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      cursor: pointer;
+      padding: 0px;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 100%;
+      transition: 0.3s;
+      background-color: #f8f8f8;
+      }
+      button.accordion.active, button.accordion:hover {
+      background-color: #f8f8f8;
+      }
+      button.accordion:after {
+      content: " [+] ";
+      font-size: 90%;
+      color:#777;
+      float: left;
+      margin-left: 1px;
+      }
+
+      button.accordion.active:after {
+      content: " [\2212] ";
+      }
+      div.panel {
+      padding: 0 20px;
+      margin-top: 5px;
+      display: none;
+      background-color: white;
+      font-size: 100%;
+      }
+      div.panel.show {
+      display: block !important;
+      }
+      .social-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Anqi Huang</h1>
+        <p>Ph.D<br>Nanjing University of Science and Technology</p>
+        <p>Research Interests<br>Machine Learning, Reinforcement Learning, Multi-Agent RL, Offline-RL, NLP</p>
+    <h3><a href="https://harticleaq.github.io/">Home</a></h3>
+        <h3><a href="https://harticleaq.github.io/research.html">Research</a></h3>
+    <h3><a href="https://harticleaq.github.io/research/CV.pdf">CV</a></h3>  
+        <h3><a href="https://harticleaq.github.io/code.html">Code</a></h3> 
+        <h3><a href="https://harticleaq.github.io/teaching.html">Teaching</a></h3> 
+        <h3><a href="https://harticleaq.github.io/personal.html">Personal</a></h3>
+    <b>Social</b><br>
+        <div class="social-row">
+          <a href="mailto:anqihuang@njust.edu.cn" class="author-social" target="_blank"><i class="fa fa-fw fa-envelope-square"></i> Email</a><br>
+          <a href="https://scholar.google.com/citations?user=eohlTTcAAAAJ&hl=en" target="_blank"><i class="ai ai-fw ai-google-scholar-square"></i> Scholar</a><br>
+          <a href="https://orcid.org/0009-0000-7282-5720"><i class="ai ai-fw ai-orcid-square"></i> ORCID</a><br>
+          <a href="http://github.com/harticleaq"><i class="fa fa-fw fa-github-square"></i> GitHub</a><br>
+          <br>
+        </div>
+        <br>
+
+    <p><b>Contact:</b><br>Nanjing<br>Nanjing University of Science and Technology<br>Xiaolingwei 200</p>
+    <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </header>
+      <section>
+    
+    <h2><a id="published-papers-updated" class="anchor" href="#publications" aria-hidden="true"><span class="octicon octicon-link"></span></a>Published &amp; Forthcoming Papers</h2>
+    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="">DVF:Multi-agent Q-learning with difference value factorization</a> <br> <i>Journal of Knowledge-Based Systems</i>, 286 (2024) 111422. <b>(Lead Article)</b> <br><button class="accordion"> 
+    Abstract   
+    </button>   
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> In cooperative multi-agent games, agents are required to learn effective cooperative behaviors within complex action spaces. An effective approach is to utilize the Individual-Global-Max (IGM) principle to decompose the global reward signal into individual contributions from each agent. However, existing methods confront two significant challenges: ensuring the accuracy of the value function decomposition process and guaranteeing monotonic improvement in joint policies. These challenges become exacerbated in scenarios involving nonmonotonic matrices. To address these challenges, we introduce a novel and flexible value factorization method called Difference Value Factorization (DVF). The key idea of our method is to transform the IGM principle into a new form DVF-IGM, which addresses non-monotonic constraints by ensuring the consistency of the IGM process between the joint difference value and the complex non-linear sum of independent difference values. A centralized evaluator is employed to estimate global Q-values, which not only enhances expressiveness but also constructs difference values for updating individual value functions. We demonstrate that DVF-IGM is an equivalent transformation of IGM and that DVF has the monotonic improvement property. Empirically, our method has been shown to maintain and recover the optimal policy in non-monotonic matrix games and achieve state-of-the-art performance in cooperative tasks within the StarCraft Multi-Agent Challenge (SMAC). </p></div>
+    <p style="margin:0"><button class="accordion">
+      BibTeX citation
+    </button>
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> <pre> <code>
+@article{HUANG2024111422,
+  title = {DVF:Multi-agent Q-learning with difference value factorization},
+  journal = {Knowledge-Based Systems},
+  volume = {286},
+  pages = {111422},
+  year = {2024},
+  issn = {0950-7051},
+  doi = {https://doi.org/10.1016/j.knosys.2024.111422},
+  author = {Anqi Huang and Yongli Wang and Jianghui Sang and Xiaoli Wang and Yupeng Wang},
+  }
+</code> </pre> </p></div>
+
+
+    <h2><a id="published-papers-updated" class="anchor" href="#publications" aria-hidden="true"><span class="octicon octicon-link"></span></a>Published &amp; Forthcoming Papers</h2>
+    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="">Trusted semi-supervised multi-view classification with contrastive learning</a> <br> <i>IEEE Transactions on Multimedia</i>, VOL. 18, NO. 9. </b> <br><button class="accordion"> 
+    Abstract   
+    </button>   
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> Semi-supervised multi-view learning is a remarkable but challenging task. Existing semi-supervised multi-view
+      classification (SMVC) approaches mainly focus on performance
+      improvement while ignoring decision reliability, which limits
+      their deployment in safety-critical applications. Although several
+      trusted multi-view classification methods are proposed recently,
+      they rely on manual annotations. Therefore, this work emphasizes
+      trusted multi-view classification learning under semi-supervised
+      conditions. Different from existing SMVC methods, this work
+      jointly models class probabilities and uncertainties based on evidential deep learning to formulate view-specific opinions. Moreover, unlike previous works that explore cross-view consistency
+      in a single schema, this work proposes a multi-level consistency
+      constraint. Specifically, we explore instance-level consistency on
+      the view-specific representation space and category-level consistency on opinions from multiple views. Our proposed trusted
+      graph-based contrastive loss nicely establishes the relationship
+      between joint opinions and view-specific representations, which
+      enables view-specific representations to enjoy a good manifold
+      to improve classification performance. Overall, the proposed
+      approach provides reliable and superior semi-supervised multiview classification decisions. Extensive experiments demonstrate
+      the effectiveness, reliability and robustness of the proposed model. </p></div>
+    <p style="margin:0"><button class="accordion">
+      BibTeX citation
+    </button>
+    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> <pre> <code>
+      @ARTICLE{10475541,
+        author={Wang, Xiaoli and Wang, Yongli and Wang, Yupeng and Huang, Anqi and Liu, Jun},
+        journal={IEEE Transactions on Multimedia}, 
+        title={Trusted semi-supervised multi-view classification with contrastive learning}, 
+        year={2024},
+        volume={},
+        number={},
+        pages={1-12},
+        keywords={Uncertainty;Semantics;Self-supervised learning;Deep learning;Ensemble learning;Ions;Estimation;Semi-supervised learning;multi-view classification;contrastive learning;uncertainty estimation},
+        doi={10.1109/TMM.2024.3379079}}
+</code> </pre> </p></div>
+
+      </section>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    <script> 
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function(){
+            this.classList.toggle("active");
+            this.parentNode.nextElementSibling.classList.toggle("show");
+      }
+    }
+    </script>
+  </body>
+</html>

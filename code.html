@@ -1,0 +1,139 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+  <script src="https://use.fontawesome.com/baff6f55f5.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Anqi Huang</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-29643011-3', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <!-- New GA4 tracking code, see https://support.google.com/analytics/answer/10271001#analyticsjs-enable-basic --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GNJD50R0Z7"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GNJD50R0Z7');
+    </script>
+
+    <!-- For all browsers -->
+    <link rel="stylesheet" href="assets/css/academicons.min.css"/>
+    <link rel="stylesheet" href="assets/css/academicons.css"/>
+    
+    <style>
+      button.accordion {
+      font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      cursor: pointer;
+      padding: 0px;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 100%;
+      transition: 0.3s;
+      background-color: #f8f8f8;
+      }
+      button.accordion.active, button.accordion:hover {
+      background-color: #f8f8f8;
+      }
+      button.accordion:after {
+      content: " [+] ";
+      font-size: 90%;
+      color:#777;
+      float: left;
+      margin-left: 1px;
+      }
+
+      button.accordion.active:after {
+      content: " [\2212] ";
+      }
+      div.panel {
+      padding: 0 20px;
+      margin-top: 5px;
+      display: none;
+      background-color: white;
+      font-size: 100%;
+      }
+      div.panel.show {
+      display: block !important;
+      }
+      .social-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Anqi Huang</h1>
+        <p>Ph.D<br>Nanjing University of Science and Technology</p>
+        <p>Research Interests<br>Machine Learning, Reinforcement Learning, Multi-Agent RL, Offline-RL, NLP</p>
+        <h3><a href="https://harticleaq.github.io/">Home</a></h3>
+        <h3><a href="https://harticleaq.github.io/research.html">Research</a></h3>
+        <h3><a href="https://harticleaq.github.io/code.html">Project</a></h3> 
+        <h3><a href="https://harticleaq.github.io/personal.html">Personal</a></h3><br>
+    <b>Social</b><br>
+        <div class="social-row">
+          <a href="mailto:anqihuang@njust.edu.cn" class="author-social" target="_blank"><i class="fa fa-fw fa-envelope-square"></i> Email</a><br>
+          <a href="https://scholar.google.com.hk/citations?user=wXM9jUoAAAAJ&hl=zh-CN" target="_blank"><i class="ai ai-fw ai-google-scholar-square"></i> Scholar</a><br>
+          <a href="https://orcid.org/0009-0000-7282-5720"><i class="ai ai-fw ai-orcid-square"></i> ORCID</a><br>
+          <a href="http://github.com/harticleaq"><i class="fa fa-fw fa-github-square"></i> GitHub</a><br>
+          <br>
+        </div>
+        <br>
+
+    <p><b>Contact:</b><br>Nanjing, Jiangsu Province<br>Nanjing University of Science and Technology<br>Xiaolingwei 200</p>
+    <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </header>
+      <section>
+
+        
+  <h2><a id="computer-code" class="anchor" href="#computercode" aria-hidden="true"><span class="octicon octicon-link"></span></a>Main Project</h2>
+    <h3>Sona waveform processing platform</h3>
+      <a href="https://github.com/harticleaq/sona.git">My Github repository</a>, which introduces basic models in Python and PyQT5</a>. The purpose of this project is to create a software for audio noise reduction for sonar detection. 
+        <ul>
+          <li>In order to achieve noise reduction, it is necessary to collect public noise data sets and add noise to the pure audio detected by sonar.</li>
+          <li>Use Scipy to design a sonar audio conversion batch processing module, which is used to convert the original sonar audio Pcm format into
+            Convert to Wav format to facilitate data preprocessing and model training.</li>
+          <li>The Wavenet network is used for noise reduction in sonar seepage sampling, and the effect is better. Using GBDT2nn
+  Realize waveform classification and classify sonar waveforms into those with seepage and without seepage.</li>
+          <li>Use PYQT5 to support the front-end design of the waveform analysis platform, which mainly includes time domain and frequency domain waveform analysis and
+  Processing module, percolation noise reduction module, Fourier noise reduction, spectral subtraction noise reduction, Wavenet noise reduction and other denoising
+  module.</li>
+        </ul>
+   <h3>Sumo-RL</h3> 
+      <a href="https://github.com/harticleaq/sumo-marl.git">My Github repository</a>, AI competition in traffic</a>. The purpose of this project is to control traffic light. 
+        <ul>
+          <li>Multi-agent, each phase is defined as an agent. The agent predicts the pressure value and expected release time of the current phase, and releases the one with the largest Q value.</li>
+          <li>The road blocking mechanism predicts the current problematic road conditions (the prediction is based on the distance between the first car and the intersection, etc.), and puts the current road into a blacklist, and waits for it to return to normal.</li>
+          <li>Make a feature processing module similar to dual GRU to generate a state knowledge memory (TODO).</li>
+        </ul>
+  <h3>Strengthen the foundation</h3> 
+      <a>My Github repository</a>, War game confrontation project</a>. 
+        <ul>
+          <li>Mainly responsible for building reinforcement learning models including QMIX, MADDPG, MAPPO and other algorithms, encapsulating the environment interface design for agent interaction into Gym form, and designing the Redis situation information reading interface.</li>
+          <li>Use LSTM and Attention mechanisms to build a situation processing module, including situation prediction and feature extraction. The extracted features are input to the agent model, and the action sequence is generated through the decision-making layer.</li>
+          <li>Use the B3tree behavioral tree engine to build a rule agent and create a rule data set for adversarial training in reinforcement learning.</li>
+        </ul>
+      </section>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
